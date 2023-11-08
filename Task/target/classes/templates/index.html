@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add your custom CSS or stylesheets here -->
+    <style>
+        /* Add your custom styles here */
+        /* ... */
+         .welcome-heading {
+            font-size: 4em;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            animation: bounce 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+    <title>Task Manager</title>
+</head>
+
+<body>
+<header >
+    <!-- Add your header content here -->
+    <!--/*/ <th:block th:include="fragments/header :: header('home')"></th:block> /*/-->
+</header>
+
+<main class="container mt-5"> <!-- Added top margin to avoid overlap with the header -->
+    <h1 class="display-4 welcome-heading">Welcome to Tasking</h1>
+    <br><br><br>
+    <p class="lead">Welcome to our efficient and user-friendly task management system! Our platform is designed to simplify task organization, delegation, and tracking, making it easier for teams and individuals to stay productive and organized. Whether you're a manager looking to streamline work assignments or an employee seeking a more organized workflow, we've got you covered. Explore the features and benefits of our system to supercharge your productivity.</p>
+
+    <div class="accordion mt-3" id="taskAccordion">
+        <!-- Your accordion content here -->
+        <!-- Example Accordion Item 1 -->
+        <div class="card">
+            <div class="card-header" id="taskHeading1">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#taskCollapse1" aria-expanded="true" aria-controls="taskCollapse1">
+                        Admin Capabilities
+                    </button>
+                </h2>
+            </div>
+
+            <div id="taskCollapse1" class="collapse" aria-labelledby="taskHeading1" data-parent="#taskAccordion">
+                <div class="card-body">
+                    As an administrator or manager, you play a crucial role in overseeing tasks and users within your organization. Our task management system equips you with powerful tools to streamline your responsibilities. With our platform, you can effortlessly create tasks and assign them to any user, maintain an updated list of all users, and manage tasks efficiently by editing, deleting, and marking them as completed or uncompleted. Stay in control and enhance team productivity with our admin features.
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Accordion Item 2 -->
+        <div class="card">
+            <div class="card-header" id="taskHeading2">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#taskCollapse2" aria-expanded="false" aria-controls="taskCollapse2">
+                        User Capabilities
+                    </button>
+                </h2>
+            </div>
+
+            <div id="taskCollapse2" class="collapse" aria-labelledby="taskHeading2" data-parent="#taskAccordion">
+                <div class="card-body">
+                    Our task management system is designed to empower every team member. Common users, or employees, can create tasks for their personal use, view a list of all users, and take ownership of their assigned tasks. This enables you to stay organized, collaborate effectively, and manage your workload with ease. Experience the convenience of switching between completed and uncompleted tasks, all within a user-friendly interface.
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Accordion Item 3 -->
+        <div class="card">
+            <div class="card-header" id="taskHeading3">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#taskCollapse3" aria-expanded="false" aria-controls="taskCollapse3">
+                        User Profiles and Personalization
+                    </button>
+                </h2>
+            </div>
+
+            <div id="taskCollapse3" class="collapse" aria-labelledby="taskHeading3" data-parent="#taskAccordion">
+                <div class="card-body">
+                    At our task management system, we believe in making your experience as personalized as possible. Every authorized user has the ability to access their own user profile, allowing you to customize your workspace. Update your profile information, set preferences, and tailor the system to your unique needs. Your user profile is the gateway to a more personalized and efficient task management experience, so you can work the way you want to.
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Accordion Item 4 -->
+        <div class="card">
+            <div class="card-header" id="taskHeading4">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#taskCollapse4" aria-expanded="false" aria-controls="taskCollapse4">
+                        Security and Technology Stack
+                    </button>
+                </h2>
+            </div>
+
+            <div id="taskCollapse4" class="collapse" aria-labelledby="taskHeading4" data-parent="#taskAccordion">
+                <div class="card-body">
+                    Security is a top priority for us. Our task management system is built using Spring Boot and Spring Security to ensure robust authentication and authorization. We store data securely in an H2 database, providing reliability and performance. The user interface is enhanced with Thymeleaf, Bootstrap, and jQuery, ensuring a modern and responsive experience. Rest assured that your data is protected, and your tasks are managed efficiently by the latest technology stack.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Owner Details Card -->
+    <div class="card mb-3">
+        <div class="card-header">
+            Admin Details
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Caroline Susanna</h5>
+            <p class="card-text">
+                <strong>Email:</strong> carolsankho1@gmail.com<br>
+                <strong>Reg No:</strong> 311520104013<br>
+                <strong>Location:</strong> Chennai, Tamilnadu<br>
+            </p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <!-- Add your footer content here -->
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
