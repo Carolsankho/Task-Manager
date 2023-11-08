@@ -23,7 +23,7 @@ public class TaskApplication{
 //		return args -> {
 //			Role user = roleRepo.save(new Role("ROLE_USER"));
 //			Role admin = roleRepo.save(new Role("ROLE_ADMIN"));
-//			userRepo.save(new User("carolsankho@gmail.com","Caroline",encoder.encode("admin"),null,null,roleRepo.findByRole("ROLE_ADMIN")));
+//			userRepo.save(new User("abc@gmail.com","abc",encoder.encode("xxxxx"),null,null,roleRepo.findByRole("ROLE_ADMIN")));
 //		};
 //	}
 
